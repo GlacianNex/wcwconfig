@@ -1,0 +1,27 @@
+{
+  "name": "wcwconfig",
+  "version": "0.9.0",
+  "description": "Configuration helper for winston-cloudwatch library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "moment-timezone" : "*",
+    "winston" : "*",
+    "winston-cloudwatch" : "*"
+  },
+  "devDependencies": {
+    "mocha" : "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlacianNex/wcwconfig.git"
+  },
+  "author": "Igor Chernyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GlacianNex/wcwconfig/issues"
+  },
+  "homepage": "https://github.com/GlacianNex/wcwconfig#readme"
+}
