@@ -3,13 +3,13 @@
 const moment = require('moment-timezone');
 
 class WCWConfig {
-    static init(logGroupName, level, awsRegion, format, timezone) {
+    static init(logGroupName, level, awsRegion, timeFormat, timezone) {
         const winston = require('winston');
         const CloudWatch = require('winston-cloudwatch');
 
         const cloudWatchTracker = new CloudWatch({
             logGroupName,
-            logStreamName: moment().tz(timezone).format(format),
+            logStreamName: moment().tz(timezone).format(timeFormat),
             awsRegion: process.env.AWS_DEFAULT_REGION || awsRegion,
             level
         });
