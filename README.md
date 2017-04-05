@@ -26,7 +26,7 @@ exports.handler = (event, context, callback) => {
     var wcwconfig = require('wcwconfig');
     const tracker = wcwconfig.init('group', 'info', 'us-east-1', 'yyyy-mm-dd hh:00', 'UTC');
 
-    const winston = require('winston);
+    const winston = require('winston');
     winston.info('hello world');
 
     tracker.kthxbye(() => callback())
